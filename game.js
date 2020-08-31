@@ -39,7 +39,7 @@ $(".btn").click(function() {
   checkAnswer(userClickedPattern.length);
 })
 
-function checkAnswer(input) {}
+function checkAnswer(input) {
 
   if (gamePattern[input - 1] === userClickedPattern[input - 1]) {
     if (input === gamePattern.length) {
@@ -49,6 +49,7 @@ function checkAnswer(input) {}
         }, 1000);
     }
   }
+
 
   else {
     var voice = new Audio("sounds/wrong.mp3");
